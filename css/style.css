@@ -1,0 +1,644 @@
+/* Сброс стилей */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'livvic', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    border: none;
+    background: none;
+}
+ul{
+    list-style: none;
+}
+input{
+    border: none;
+    background: none;
+}
+
+/*Стили для шапки*/
+header{
+    background-color: #334B35;
+    padding: 40px;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+}
+header nav ul li a{
+    color: #fff;
+    font-size: 18px;
+}
+
+
+
+/* Стили для 1 секции */
+.hero{
+    background: url("../img/matter.png");
+    height: 704px;
+}
+.hero-container{
+    position: relative;
+    top: 120px;
+    left: 180px;
+    max-width: 730px;
+    width: 100%;
+}
+.hero-container span{
+    color: #FFFFFF;
+    font-size: 25px;
+}
+.hero-text-zag{
+    margin-top: 20px;
+}
+.hero-text-zag img{
+    position: absolute;
+    right: 90px;
+    top: 30px;
+}
+.hero-text-zag h1{
+    color: #F7C35F;
+    position: relative;
+    font-size: 70px;
+}
+.hero-text h2{
+    color: #fff;
+    font-size: 70px;
+    font-weight: 400;
+}
+.hero-text p{
+    font-size: 20px;
+    color: #fff;
+    margin: 50px auto;
+}
+.discover-more{
+    padding: 25px 50px;
+    border-radius: 20px;
+    background-color: rgb(247, 195, 95);
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.discover-more:hover{
+    background-color: #F6D086;
+}
+.discover-more:focus{
+    background-color: #C58D21;
+    box-shadow: 0 0 3px 2px #919191;
+}
+.discover-more:active{
+    background-color: #A16C06;
+    color: #fff;
+}
+
+
+
+/* Стили для 2 секции*/
+.popular-foods{
+    background-color: #334B35
+}
+.popular-foods-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 50px 0 120px 0;
+}
+.popular-foods-content p{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+.popular-foods-content h2{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+}
+.foods{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.foods-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 40px;
+    border-radius: 15px;
+    background: rgb(68, 89, 69);
+    transition: all 0.3s ease;
+}
+.foods-item:hover{
+    background: rgb(247, 195, 95);
+}
+.foods-item:focus{
+    background: rgb(106, 138, 109);
+}
+.foods-item:active{
+    background: rgb(38, 60, 40);
+}
+.foods-item span{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/*Стили для 3 секции*/
+.agriculture{
+    background: url('../img/Agriculture.png');
+    padding: 250px 150px;
+}
+.agriculture h2{
+    color: #fff;
+    font-size: 50px;
+    max-width: 610px;
+    width: 100%;
+}
+
+
+/*Стили для 4 секции*/
+.projects {
+    background-color: #263C28;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+}
+.projects-content {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.projects-content p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+}
+.projects-content h2{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+}
+.our-projects{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.projects-item{
+    max-width: 240px;
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: end;
+    transition: all 0.3s ease;
+}
+.projects-item:hover{
+    border: 2px solid rgb(247, 195, 95);
+    transform: translateY(-20px);
+}
+.projects-item:focus{
+    border: 2px solid rgb(247, 195, 95);
+}
+.projects-item:active{
+    box-shadow: 0px 0px 1px 1px #961d1d;
+}
+#proj-first{
+    background: url("../img/projects\ 1.png");
+    background-position: center;
+}
+
+#proj-second{
+    background: url("../img/projects\ 2.png");
+    background-position: center;
+}
+#proj-free{
+    background: url("../img/projects\ 3.png");
+    background-position: center;
+}
+#proj-four{
+    background: url("../img/projects\ 4.png");
+    background-position: center;
+}
+.projects-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.projects-text-left p{
+    font-size: 12px;
+    color: #F7C35F;
+}
+.projects-text-left h3{
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+/*Стили для 5 секции*/
+.testimonials{
+    background-color: #334B35;
+    padding: 100px 0 100px 0;
+}
+.testimonials-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.testimonials-zag{
+    text-align: center;
+}
+.testimonials-zag p{
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+.testimonials-zag h2{
+    font-size: 50px;
+    color: #FFFFFF;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.testimonials-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 60px;
+    align-items: center;
+}
+.testimonials-avatar{
+    position: relative;
+    z-index: 0;
+    max-width: 350px;
+    width: 100%;
+    height: 350px;
+}
+.testimonials-people{
+    height: auto;
+    width: 100%;
+    transition: all 0.4s ease;
+}
+.testimonials-people-decor{
+    position: absolute;
+    z-index: 1;
+    right: 50px;
+}
+.testimonials-text{
+    max-width: 600px;
+    width: 100%;
+}
+.testimonials-text p{
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+}
+.testimonials-text h3{
+    margin-top: 40px;
+    font-weight: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #fff;
+}
+.testimonials-text span{
+    color:rgb(172, 172, 172);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+/*Стили для 6 секции*/
+.modern{
+    display: flex;
+    flex-direction: row;
+}
+.modern .img-back{
+    max-width: 550px;
+    width: 100%;
+}
+.modern-container{
+    background-color: #6D8C54;
+    padding: 80px 0 80px 80px;
+    width: 100%;
+}
+.modern-content span{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #FFFFFF;
+    max-width: 220px;
+    width: 100%;
+}
+.modern-content h2{
+    max-width: 600px;
+    width: 100%;
+    font-size: 50px;
+    color: #FFFFFF;
+    line-height: 60px;
+    margin-top: 10px;
+}
+.modern-items{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 700px;
+    width: 100%;
+}
+.modern-item{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+.modern-border{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.modern-item-text h3{
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #FFF;
+}
+.modern-item-text p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 5px;
+    color: #e4e4e4;
+}
+
+/*Стили для 7 секции*/
+.contact-us{
+    background-color: #355232;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 50px 0;
+}
+.contact-us-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+}
+.contact-us-text{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.contact-us-zag span{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 30px;
+}
+.contact-us-zag h2{
+    color: #fff;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-top: 10px;
+}
+.contact-us-zag p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 25px;
+    color: #fff;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.contacts-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contacts-info h3{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #fff;
+}
+.contacts-info-text{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact-us-form{
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.contact-us-form input{
+    background-color: #263C28;
+    padding: 25px 22px 25px 22px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+.contact-us-form input::placeholder{
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.contact-us-form input:focus{
+    border: none;
+}
+.contact-us-form .message{
+    padding: 25px 22px 140px 22px;
+}
+.contact-us-form button{
+    padding: 25px 50px 25px 50px;
+    border-radius: 20px;
+    background: rgb(247, 195, 95);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19px;
+    align-self: flex-start;
+    transition: all 0.3s ease;
+}
+.contact-us-form button:hover{
+    background-color: #F6D086;
+}
+.contact-us-form button:focus{
+    background-color: #C58D21;
+    box-shadow: 0 0 3px 2px #919191;
+}
+.contact-us-form button:active{
+    background-color: #A16C06;
+    color: #fff;
+}
+
+/*Стили для 8 секции*/
+.leader{
+    background: linear-gradient(142.18deg, rgba(248, 204, 119, 0.8) 44.781%,rgba(248, 204, 119, 0.16) 104.306%);
+    background-color: #365639;
+    padding: 100px 0;    
+}
+.leader-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.leader-container-text{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: end;
+}
+.leader-container-text h2{
+    color: rgb(52, 76, 49);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 63px;
+}
+
+
+/*Стили для подвала*/
+footer{
+    background-color: #355232;
+    padding: 100px 0 50px 0;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+.footer-description{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer-description img{
+    max-width: 200px;
+    width: 100%;
+}
+.footer-content-text{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    max-width: 600px;
+    width: 100%;
+}
+.footer-description-border{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.social-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+.social-links img{
+    width: 30px;
+}
+.useful-links{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer-content-zag{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.useful-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.useful-links ul li{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+}
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.newsletter p{
+    max-width: 300px;
+    width: 100%;
+}
+.input-field{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-field input{
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    background: rgb(38, 60, 40);
+    padding: 20px;
+    max-width: 200px;
+    width: 100%;
+}
+.input-field button{
+    color: rgb(26, 26, 26);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19px;
+    background: rgb(247, 195, 95);
+    padding: 17px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.input-field button:hover{
+    background-color: #F6D086;
+}
+.input-field button:focus{
+    background-color: #C58D21;
+    box-shadow: 0 0 3px 2px #919191;
+}
+.input-field button:active{
+    background-color: #A16C06;
+    color: #fff;
+}
