@@ -25,6 +25,10 @@ input{
 header{
     background-color: #334B35;
     padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 header nav{
     display: flex;
@@ -48,12 +52,16 @@ header nav ul li a{
 /* Стили для 1 секции */
 .hero{
     background: url("../img/matter.png");
-    height: 704px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: auto;
+    padding: 100px;
 }
 .hero-container{
-    position: relative;
-    top: 120px;
-    left: 180px;
     max-width: 730px;
     width: 100%;
 }
@@ -63,16 +71,18 @@ header nav ul li a{
 }
 .hero-text-zag{
     margin-top: 20px;
+    position: relative;
 }
 .hero-text-zag img{
     position: absolute;
     right: 90px;
-    top: 30px;
+    top: -25px;
 }
 .hero-text-zag h1{
     color: #F7C35F;
-    position: relative;
     font-size: 70px;
+    max-width: 650px;
+    width: 100%;
 }
 .hero-text h2{
     color: #fff;
@@ -164,7 +174,14 @@ header nav ul li a{
 /*Стили для 3 секции*/
 .agriculture{
     background: url('../img/Agriculture.png');
-    padding: 250px 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 700px;
+    padding-left: 200px;
 }
 .agriculture h2{
     color: #fff;
@@ -182,7 +199,8 @@ header nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 0;
+    justify-content: center;
+    height: 700px;
 }
 .projects-content {
     z-index: 2;
@@ -265,7 +283,11 @@ header nav ul li a{
 /*Стили для 5 секции*/
 .testimonials{
     background-color: #334B35;
-    padding: 100px 0 100px 0;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .testimonials-container{
     display: flex;
@@ -321,6 +343,8 @@ header nav ul li a{
     line-height: 27px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    width: 100%;
 }
 .testimonials-text h3{
     margin-top: 40px;
@@ -341,15 +365,20 @@ header nav ul li a{
 .modern{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .modern .img-back{
-    max-width: 550px;
-    width: 100%;
+    width: 35%;
 }
 .modern-container{
     background-color: #6D8C54;
-    padding: 80px 0 80px 80px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 80px;
+    height: 600px;
+    width: 65%;
 }
 .modern-content span{
     font-size: 20px;
@@ -394,7 +423,6 @@ header nav ul li a{
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
-    margin-top: 5px;
     color: #e4e4e4;
 }
 
@@ -404,7 +432,8 @@ header nav ul li a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0 50px 0;
+    justify-content: center;
+    height: 800px;
 }
 .contact-us-container{
     display: flex;
@@ -416,8 +445,8 @@ header nav ul li a{
     max-width: 800px;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    gap: 50px;
+     flex-direction: column;
+   gap: 50px;
 }
 .contact-us-zag span{
     font-size: 20px;
@@ -510,13 +539,20 @@ header nav ul li a{
 .leader{
     background: linear-gradient(142.18deg, rgba(248, 204, 119, 0.8) 44.781%,rgba(248, 204, 119, 0.16) 104.306%);
     background-color: #365639;
-    padding: 100px 0;    
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
 }
 .leader-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    max-width: 1150px;
+    width: 100%;
+    padding: 0 20px;
 }
 .leader-container-text{
     display: flex;
@@ -535,23 +571,31 @@ header nav ul li a{
 /*Стили для подвала*/
 footer{
     background-color: #355232;
-    padding: 100px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
 }
 .footer-container{
     display: flex;
     flex-direction: column;
     gap: 50px;
+    padding: 0 30px 0 30px;
+    max-width: 1200px;
+    width: 100%;
 }
 .footer-content{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 0 30px 0 30px;
+    justify-content: space-between;
 }
 .footer-description{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    max-width: 400px;
+    width: 100%;
 }
 .footer-description img{
     max-width: 200px;
@@ -581,6 +625,8 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    max-width: 130px;
+    width: 100%;
 }
 .footer-content-zag{
     color: rgb(255, 255, 255);
@@ -603,6 +649,8 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 25px;
+    max-width: 300px;
+    width: 100%;
 }
 .newsletter p{
     max-width: 300px;
