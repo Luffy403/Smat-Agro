@@ -46,7 +46,10 @@ header nav ul li a{
     color: #fff;
     font-size: 18px;
 }
-
+.dropdown{
+    display: none;
+    position: relative;
+}
 
 
 /* Стили для 1 секции */

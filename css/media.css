@@ -3,19 +3,42 @@
     /*Шапка*/
     header{
         padding: 15px;
+        justify-content: space-between;
     }
     header .logo{
-        max-width: 80px;
+        max-width: 120px;
         width: 100%;
-        margin-top: 5px;
     }
     header nav ul{
-        gap: 10px;
+        display: none;
     }
-    header nav ul li a{
-        font-size: 14px;
+    .dropdown{
+        display: flex;
+        flex-direction: column;
     }
-
+    .dropbtn img{
+        max-width: 30px;
+        width: 100%;
+    }
+    .dropdown-content{
+        position: absolute;
+        z-index: 1;
+        background-color: #334B35;
+        box-shadow: 2px 2px 2px 3px #739076;
+        top: 40px;
+        right: 1px;
+        border-radius: 2px;
+        padding: 5px;
+        text-align: center;
+    }
+    .drop a{
+        font-size: 16px;
+        color: #fff;
+        padding: 5px;
+    }
+    .show{
+        display: block;
+    }
     /*1 секция*/
     .hero{
         padding: 60px 40px;
