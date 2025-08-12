@@ -61,8 +61,8 @@ header nav ul li a{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    height: auto;
-    padding: 100px;
+    height: 700px;
+    padding-left: 100px;
 }
 .hero-container{
     max-width: 730px;
@@ -121,16 +121,22 @@ header nav ul li a{
 
 /* Стили для 2 секции*/
 .popular-foods{
-    background-color: #334B35
+    background-color: #334B35;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 550px;
+    height: 100%;
 }
 .popular-foods-content{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 25px;
-    padding: 50px 0 120px 0;
 }
 .popular-foods-content p{
+    margin-top: 10px;
     font-size: 20px;
     color: #fff;
     font-weight: 400;
@@ -203,7 +209,8 @@ header nav ul li a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 700px;
+    min-height: 700px;
+    height: 100%;
 }
 .projects-content {
     z-index: 2;
@@ -286,7 +293,8 @@ header nav ul li a{
 /*Стили для 5 секции*/
 .testimonials{
     background-color: #334B35;
-    height: 750px;
+    min-height: 750px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -380,7 +388,8 @@ header nav ul li a{
     align-items: flex-start;
     justify-content: center;
     padding-left: 80px;
-    height: 600px;
+    min-height: 600px;
+    height: 100%;
     width: 65%;
 }
 .modern-content span{
@@ -436,7 +445,8 @@ header nav ul li a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 800px;
+    min-height: 800px;
+    height: 100%;
 }
 .contact-us-container{
     display: flex;
