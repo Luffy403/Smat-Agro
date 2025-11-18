@@ -1,0 +1,610 @@
+/* Сброс стилей */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Livvic', sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    border: none;
+    background: transparent;
+    color: black;
+    outline: none;
+}
+ul{
+    list-style: none;
+}
+input{
+    border: none;
+    background: transparent;
+    outline: none;
+}
+textarea{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+/* Адаптация под 1920px экрана(ПК) */
+
+/* Шаблоны */
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 240px;
+}
+
+/* Шапка */
+.header{
+    background: rgba(51, 75, 53, 1);
+    position: sticky;
+    top: 0;
+    z-index: 6;
+}
+.header__container{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__links{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.nav__link{
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* 1 секция */
+.hero{
+    background-image: url('../assets/img/back.png');
+}
+.hero__container{
+    padding-top: 268px;
+    padding-bottom: 234px;
+}
+.hero__span{
+    color:rgba(255, 255, 255, 1);
+    font-size: 25px;
+}
+.hero__zag{
+    margin-top: 16px;
+    position: relative;
+    max-width: 640px;
+    width: 100%;
+}
+.hero__title{
+    color: rgba(247, 195, 95, 1);
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 88px;
+}
+.hero__list{
+    position: absolute;
+    z-index: 5;
+    bottom: 50px;
+    right: 0;
+}
+.hero__h2{
+    color: rgba(255, 255, 255, 1);
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 88px;
+}
+.hero__text{
+    max-width: 730px;
+    width: 100%;
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 10px;
+}
+.hero__btn, .contact-us__btn, .leader__btn{
+    color: rgba(26, 26, 26, 1);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 19px;
+    padding: 25px 50px 25px 50px;
+    border-radius: 20px;
+    background: rgba(247, 195, 95, 1);
+    margin-top: 30px;
+}
+
+/* 2 секция */
+.fruits{
+    background-color: #334B35;
+}
+.fruits__container{
+    padding-top: 78px;
+    padding-bottom: 181px;
+    text-align: center;
+}
+.fruits__zag{
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.fruits__text{
+    color: rgba(255, 255, 255, 1);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 63px;
+}
+.fruits__items{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.fruits__item{
+    background-color: #445945;
+    padding: 33px 57px 33px 57px;
+    border-radius: 15px;
+    width: 189px;
+}
+.fruits__item__text{
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+/* 3 секция */
+.agriculture{
+    background-image: url('../assets/img/3-section-back.png');
+}
+.agriculture__container{
+    padding-top: 284px; padding-bottom: 284px;
+}
+.agriculture__title{
+    color: rgba(255, 255, 255, 1);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 63px;
+    max-width: 609px;
+    width: 100%;
+}
+
+/* 4 секция */
+.projects{
+    background-color: #263C28;
+}
+.projects__container{
+    padding-top: 130px;
+    padding-bottom: 160px;
+    text-align: center;
+}
+.projects__text{
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.projects__title{
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 63px;
+}
+.projects__items{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+}
+.projects__item{
+    padding: 264px 25px 20px 25px;
+    text-align: left;
+    border-radius: 10px;
+    background: linear-gradient(180.00deg, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.7) 100%);
+    max-width: 318px;
+    width: 100%;
+}
+.projects__item__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.projects__item__zag{
+    color: rgba(247, 195, 95, 1);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+}
+.projects__item__desc{
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+    max-width: 133px;
+}
+#one{
+    background-image: url('../assets/img/projects\ 1.png');
+    background-position: center;
+}
+#two{
+    background-image: url('../assets/img/projects\ 2.png');
+    background-position: center;
+}
+#fre{
+    background-image: url('../assets/img/projects\ 3.png');
+    background-position: center;
+}
+#four{
+    background-image: url('../assets/img/projects\ 4.png');
+    background-position: center;
+}
+
+/* 5 секция */
+.testimonials{
+    background-color: #334B35;
+}
+.testimonials__container{
+    padding: 100px 360px 160px 360px;
+    text-align: center;
+}
+.testimonials__text{
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.testimonials__title{
+    color: rgba(255, 255, 255, 1);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 63px;
+}
+.client{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    align-items: center;
+}
+.client__avatar{
+    max-width: 350px;
+    width: 100%;
+    position: relative;
+}
+.client__img{
+    width: 100%;
+}
+.client__img__decor{
+    position: absolute;
+    right: 45px;
+    top: 0;
+}
+.client__text{
+    text-align: left;
+}
+.client__desc{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    max-width: 764px;
+    width: 100%;
+}
+.client__name{
+    margin-top: 40px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+}
+.client__spec{
+    color: rgba(172, 172, 172, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+/* 6 секция */
+.modern{
+    display: flex;
+    flex-direction: row;
+    background: rgba(109, 140, 84, 1);
+}
+.modern__back{
+    max-width: 841px;
+    width: 100%;
+}
+.modern__container{
+    max-width: 1079px;
+    padding: 80px 240px 80px 110px;
+    margin: 0;
+}
+.modern__title{
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.modern__text{
+    color: rgba(255, 255, 255, 1);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 63px;
+    max-width: 549px;
+    width: 100%;
+}
+.modern__box{
+    max-width: 730px;
+    width: 100%;
+    margin-top: 68px;
+}
+.modern__item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+.item__title{
+    color: rgba(255, 255, 255, 1);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.item__text{
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 7px;
+    max-width: 610px;
+    width: 100%;
+}
+.modern__border{
+    width: 100%;
+    margin: 60px 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 7 секция */
+.contact-us{
+    background-color: #355232;
+}
+.contact-us__container{
+    padding-top: 90px;
+    padding-bottom: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-us__box{
+    max-width: 643px;
+    width: 100%;
+}
+.contact-us__title{
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.contact-us__text{
+    color: rgba(255, 255, 255, 1);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 63px;
+}
+.contact-us__desc{
+    margin-top: 45px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+.contact-us__contacts{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.contact-us__item__title{
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.contact-us__item__text{
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+}
+.contact-us__form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 664px;
+    width: 100%;
+}
+.contact-us__input{
+    padding: 25px 22px 25px 22px;
+    border-radius: 10px;
+    background: rgba(38, 60, 40, 1);
+}
+.contact-us__input::placeholder, .contact-us__textarea::placeholder{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.contact-us__textarea{
+    resize: vertical;
+    padding: 25px 22px 140px 22px;
+    border-radius: 10px;
+    background: rgba(38, 60, 40, 1);
+}
+.contact-us__btn{
+    align-self: flex-start;
+    margin: 0;
+}
+
+/* 7 секция */
+.leader{
+    background: linear-gradient(142.18deg, rgba(248.2000274658203, 204, 118.99998474121094, 0.8),rgba(248.2000274658203, 204, 118.99998474121094, 0.16) 100%);
+    background-color: #4c7450;
+}
+.leader__container{
+    padding-top: 111px;
+    padding-bottom: 111px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.leader__content{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: flex-end;
+}
+.leader__content__title{
+    color: rgba(52, 76, 49, 1);
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 63px;
+}
+.leader__btn{
+    margin: 0;
+}
+
+/* Подвал */
+.footer{
+    background-color: #355232;
+}
+.footer__container{
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+.footer__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer__main{
+    max-width: 630px;
+    width: 100%;
+}
+.footer__logo{
+    max-width: 197px;
+    width: 100%;
+}
+.footer__desc{
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 25px;
+}
+.footer__main__border{
+    margin: 34px 0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer__main__links{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.footer__links__title, .footer__newsletter__title{
+    color: rgba(255, 255, 255, 1);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+.footer__links__items{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer__links__item{
+    color: rgba(255, 255, 255, 1);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+}
+.footer__newsletter{
+    max-width: 315px;
+    width: 100%;
+}
+.footer__newsletter__text{
+    width: 100%;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.input__form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+.footer__input{
+    border-radius: 50px;
+    background: rgba(38, 60, 40, 1);
+    padding: 18px 75px 18px 20px;
+}
+.footer__input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.footer__btn{
+    padding: 10px;
+    background: rgba(247, 195, 95, 1);
+    color: rgba(26, 26, 26, 1);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    border-radius: 50%;
+}
+.footer__border{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer__container__bottom{
+    padding-bottom: 49px;
+}
+.footer__copyright{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.copyright__right{
+    display: flex;
+    gap: 25px;
+}
+.copyright__left, .copyright__item{
+    color: rgba(255, 255, 255, 1);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+}
